@@ -1,0 +1,788 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0496CCF22D5C3C410037EB13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0496CCF12D5C3C410037EB13 /* AppDelegate.m */; };
+		0496CCF82D5C3C410037EB13 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0496CCF72D5C3C410037EB13 /* ViewController.m */; };
+		0496CCFB2D5C3C410037EB13 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0496CCFA2D5C3C410037EB13 /* Base */; };
+		0496CCFD2D5C3C420037EB13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0496CCFC2D5C3C420037EB13 /* Assets.xcassets */; };
+		0496CD002D5C3C420037EB13 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0496CCFF2D5C3C420037EB13 /* Base */; };
+		0496CD032D5C3C420037EB13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0496CD022D5C3C420037EB13 /* main.m */; };
+		0496CD0D2D5C3C430037EB13 /* QIUI_APITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0496CD0C2D5C3C430037EB13 /* QIUI_APITests.m */; };
+		0496CD172D5C3C430037EB13 /* QIUI_APIUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0496CD162D5C3C430037EB13 /* QIUI_APIUITests.m */; };
+		0496CD192D5C3C430037EB13 /* QIUI_APIUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0496CD182D5C3C430037EB13 /* QIUI_APIUITestsLaunchTests.m */; };
+		0496CD302D5C498E0037EB13 /* APIHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0496CD2F2D5C498E0037EB13 /* APIHomeViewController.xib */; };
+		0496CD312D5C498E0037EB13 /* APIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0496CD2E2D5C498E0037EB13 /* APIHomeViewController.m */; };
+		04C791FC2D5EE92400C02514 /* AESCipher.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C791FA2D5EE92400C02514 /* AESCipher.m */; };
+		04D9071D2D5D981B00861ABB /* NSDictionary+JMJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D907192D5D981B00861ABB /* NSDictionary+JMJson.m */; };
+		04D9071E2D5D981B00861ABB /* NSMutableDictionary+JMJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9071B2D5D981B00861ABB /* NSMutableDictionary+JMJson.m */; };
+		04D907262D5DD17500861ABB /* HKPeripheralInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D907202D5DD17500861ABB /* HKPeripheralInfo.m */; };
+		04D907272D5DD17500861ABB /* HKBabyBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D907232D5DD17500861ABB /* HKBabyBluetoothManager.m */; };
+		04D9072B2D5DD53900861ABB /* APIBuletoothListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D9072A2D5DD53900861ABB /* APIBuletoothListViewController.xib */; };
+		04D9072C2D5DD53900861ABB /* APIBuletoothListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D907292D5DD53900861ABB /* APIBuletoothListViewController.m */; };
+		04D907312D5DDC7300861ABB /* BuletoothListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D907302D5DDC7300861ABB /* BuletoothListCell.xib */; };
+		04D907322D5DDC7300861ABB /* BuletoothListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9072F2D5DDC7300861ABB /* BuletoothListCell.m */; };
+		E6D57FBF0C3179567D88852B /* libPods-QIUI-API.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DE60837BFBD419A6322A3E /* libPods-QIUI-API.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0496CD092D5C3C430037EB13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0496CCE52D5C3C410037EB13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0496CCEC2D5C3C410037EB13;
+			remoteInfo = "QIUI-API";
+		};
+		0496CD132D5C3C430037EB13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0496CCE52D5C3C410037EB13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0496CCEC2D5C3C410037EB13;
+			remoteInfo = "QIUI-API";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03DE60837BFBD419A6322A3E /* libPods-QIUI-API.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QIUI-API.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0496CCED2D5C3C410037EB13 /* QIUI-API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QIUI-API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0496CCF02D5C3C410037EB13 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0496CCF12D5C3C410037EB13 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0496CCF62D5C3C410037EB13 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0496CCF72D5C3C410037EB13 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0496CCFA2D5C3C410037EB13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0496CCFC2D5C3C420037EB13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0496CCFF2D5C3C420037EB13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0496CD012D5C3C420037EB13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0496CD022D5C3C420037EB13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0496CD082D5C3C430037EB13 /* QIUI-APITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QIUI-APITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0496CD0C2D5C3C430037EB13 /* QIUI_APITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QIUI_APITests.m; sourceTree = "<group>"; };
+		0496CD122D5C3C430037EB13 /* QIUI-APIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QIUI-APIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0496CD162D5C3C430037EB13 /* QIUI_APIUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QIUI_APIUITests.m; sourceTree = "<group>"; };
+		0496CD182D5C3C430037EB13 /* QIUI_APIUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QIUI_APIUITestsLaunchTests.m; sourceTree = "<group>"; };
+		0496CD2D2D5C498E0037EB13 /* APIHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIHomeViewController.h; sourceTree = "<group>"; };
+		0496CD2E2D5C498E0037EB13 /* APIHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIHomeViewController.m; sourceTree = "<group>"; };
+		0496CD2F2D5C498E0037EB13 /* APIHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = APIHomeViewController.xib; sourceTree = "<group>"; };
+		04C791F92D5EE92400C02514 /* AESCipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCipher.h; sourceTree = "<group>"; };
+		04C791FA2D5EE92400C02514 /* AESCipher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCipher.m; sourceTree = "<group>"; };
+		04D907182D5D981B00861ABB /* NSDictionary+JMJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JMJson.h"; sourceTree = "<group>"; };
+		04D907192D5D981B00861ABB /* NSDictionary+JMJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JMJson.m"; sourceTree = "<group>"; };
+		04D9071A2D5D981B00861ABB /* NSMutableDictionary+JMJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+JMJson.h"; sourceTree = "<group>"; };
+		04D9071B2D5D981B00861ABB /* NSMutableDictionary+JMJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+JMJson.m"; sourceTree = "<group>"; };
+		04D9071F2D5DD17500861ABB /* HKPeripheralInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKPeripheralInfo.h; sourceTree = "<group>"; };
+		04D907202D5DD17500861ABB /* HKPeripheralInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKPeripheralInfo.m; sourceTree = "<group>"; };
+		04D907222D5DD17500861ABB /* HKBabyBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKBabyBluetoothManager.h; sourceTree = "<group>"; };
+		04D907232D5DD17500861ABB /* HKBabyBluetoothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKBabyBluetoothManager.m; sourceTree = "<group>"; };
+		04D907282D5DD53900861ABB /* APIBuletoothListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIBuletoothListViewController.h; sourceTree = "<group>"; };
+		04D907292D5DD53900861ABB /* APIBuletoothListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIBuletoothListViewController.m; sourceTree = "<group>"; };
+		04D9072A2D5DD53900861ABB /* APIBuletoothListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = APIBuletoothListViewController.xib; sourceTree = "<group>"; };
+		04D9072E2D5DDC7300861ABB /* BuletoothListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuletoothListCell.h; sourceTree = "<group>"; };
+		04D9072F2D5DDC7300861ABB /* BuletoothListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuletoothListCell.m; sourceTree = "<group>"; };
+		04D907302D5DDC7300861ABB /* BuletoothListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuletoothListCell.xib; sourceTree = "<group>"; };
+		B8D2C347587FC292C34495DE /* Pods-QIUI-API.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QIUI-API.release.xcconfig"; path = "Target Support Files/Pods-QIUI-API/Pods-QIUI-API.release.xcconfig"; sourceTree = "<group>"; };
+		ECD7E1CFAFB1E5B61CFC3B37 /* Pods-QIUI-API.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QIUI-API.debug.xcconfig"; path = "Target Support Files/Pods-QIUI-API/Pods-QIUI-API.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0496CCEA2D5C3C410037EB13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6D57FBF0C3179567D88852B /* libPods-QIUI-API.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0496CD052D5C3C430037EB13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0496CD0F2D5C3C430037EB13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0496CCE42D5C3C410037EB13 = {
+			isa = PBXGroup;
+			children = (
+				0496CCEF2D5C3C410037EB13 /* QIUI-API */,
+				0496CD0B2D5C3C430037EB13 /* QIUI-APITests */,
+				0496CD152D5C3C430037EB13 /* QIUI-APIUITests */,
+				0496CCEE2D5C3C410037EB13 /* Products */,
+				81BD4DA142E8A2A1A119E081 /* Pods */,
+				4A62D433129AA0D6708423AE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0496CCEE2D5C3C410037EB13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0496CCED2D5C3C410037EB13 /* QIUI-API.app */,
+				0496CD082D5C3C430037EB13 /* QIUI-APITests.xctest */,
+				0496CD122D5C3C430037EB13 /* QIUI-APIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0496CCEF2D5C3C410037EB13 /* QIUI-API */ = {
+			isa = PBXGroup;
+			children = (
+				04D907172D5D97F000861ABB /* Manager */,
+				0496CD252D5C44E50037EB13 /* HOME */,
+				0496CCF02D5C3C410037EB13 /* AppDelegate.h */,
+				0496CCF12D5C3C410037EB13 /* AppDelegate.m */,
+				0496CCF62D5C3C410037EB13 /* ViewController.h */,
+				0496CCF72D5C3C410037EB13 /* ViewController.m */,
+				0496CCF92D5C3C410037EB13 /* Main.storyboard */,
+				0496CCFC2D5C3C420037EB13 /* Assets.xcassets */,
+				0496CCFE2D5C3C420037EB13 /* LaunchScreen.storyboard */,
+				0496CD012D5C3C420037EB13 /* Info.plist */,
+				0496CD022D5C3C420037EB13 /* main.m */,
+			);
+			path = "QIUI-API";
+			sourceTree = "<group>";
+		};
+		0496CD0B2D5C3C430037EB13 /* QIUI-APITests */ = {
+			isa = PBXGroup;
+			children = (
+				0496CD0C2D5C3C430037EB13 /* QIUI_APITests.m */,
+			);
+			path = "QIUI-APITests";
+			sourceTree = "<group>";
+		};
+		0496CD152D5C3C430037EB13 /* QIUI-APIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0496CD162D5C3C430037EB13 /* QIUI_APIUITests.m */,
+				0496CD182D5C3C430037EB13 /* QIUI_APIUITestsLaunchTests.m */,
+			);
+			path = "QIUI-APIUITests";
+			sourceTree = "<group>";
+		};
+		0496CD252D5C44E50037EB13 /* HOME */ = {
+			isa = PBXGroup;
+			children = (
+				04D9072D2D5DDC5600861ABB /* VIEW */,
+				0496CD2D2D5C498E0037EB13 /* APIHomeViewController.h */,
+				0496CD2E2D5C498E0037EB13 /* APIHomeViewController.m */,
+				0496CD2F2D5C498E0037EB13 /* APIHomeViewController.xib */,
+				04D907282D5DD53900861ABB /* APIBuletoothListViewController.h */,
+				04D907292D5DD53900861ABB /* APIBuletoothListViewController.m */,
+				04D9072A2D5DD53900861ABB /* APIBuletoothListViewController.xib */,
+			);
+			path = HOME;
+			sourceTree = "<group>";
+		};
+		04C791FB2D5EE92400C02514 /* AES加密方式 */ = {
+			isa = PBXGroup;
+			children = (
+				04C791F92D5EE92400C02514 /* AESCipher.h */,
+				04C791FA2D5EE92400C02514 /* AESCipher.m */,
+			);
+			path = "AES加密方式";
+			sourceTree = "<group>";
+		};
+		04D907172D5D97F000861ABB /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				04C791FB2D5EE92400C02514 /* AES加密方式 */,
+				04D907252D5DD17500861ABB /* 蓝牙 */,
+				04D9071C2D5D981B00861ABB /* Json处理 */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		04D9071C2D5D981B00861ABB /* Json处理 */ = {
+			isa = PBXGroup;
+			children = (
+				04D907182D5D981B00861ABB /* NSDictionary+JMJson.h */,
+				04D907192D5D981B00861ABB /* NSDictionary+JMJson.m */,
+				04D9071A2D5D981B00861ABB /* NSMutableDictionary+JMJson.h */,
+				04D9071B2D5D981B00861ABB /* NSMutableDictionary+JMJson.m */,
+			);
+			path = "Json处理";
+			sourceTree = "<group>";
+		};
+		04D907212D5DD17500861ABB /* model */ = {
+			isa = PBXGroup;
+			children = (
+				04D9071F2D5DD17500861ABB /* HKPeripheralInfo.h */,
+				04D907202D5DD17500861ABB /* HKPeripheralInfo.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		04D907242D5DD17500861ABB /* HKBLE */ = {
+			isa = PBXGroup;
+			children = (
+				04D907212D5DD17500861ABB /* model */,
+				04D907222D5DD17500861ABB /* HKBabyBluetoothManager.h */,
+				04D907232D5DD17500861ABB /* HKBabyBluetoothManager.m */,
+			);
+			path = HKBLE;
+			sourceTree = "<group>";
+		};
+		04D907252D5DD17500861ABB /* 蓝牙 */ = {
+			isa = PBXGroup;
+			children = (
+				04D907242D5DD17500861ABB /* HKBLE */,
+			);
+			path = "蓝牙";
+			sourceTree = "<group>";
+		};
+		04D9072D2D5DDC5600861ABB /* VIEW */ = {
+			isa = PBXGroup;
+			children = (
+				04D9072E2D5DDC7300861ABB /* BuletoothListCell.h */,
+				04D9072F2D5DDC7300861ABB /* BuletoothListCell.m */,
+				04D907302D5DDC7300861ABB /* BuletoothListCell.xib */,
+			);
+			path = VIEW;
+			sourceTree = "<group>";
+		};
+		4A62D433129AA0D6708423AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03DE60837BFBD419A6322A3E /* libPods-QIUI-API.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		81BD4DA142E8A2A1A119E081 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECD7E1CFAFB1E5B61CFC3B37 /* Pods-QIUI-API.debug.xcconfig */,
+				B8D2C347587FC292C34495DE /* Pods-QIUI-API.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0496CCEC2D5C3C410037EB13 /* QIUI-API */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0496CD1C2D5C3C430037EB13 /* Build configuration list for PBXNativeTarget "QIUI-API" */;
+			buildPhases = (
+				EAA9780E20934E52678293DE /* [CP] Check Pods Manifest.lock */,
+				0496CCE92D5C3C410037EB13 /* Sources */,
+				0496CCEA2D5C3C410037EB13 /* Frameworks */,
+				0496CCEB2D5C3C410037EB13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QIUI-API";
+			productName = "QIUI-API";
+			productReference = 0496CCED2D5C3C410037EB13 /* QIUI-API.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0496CD072D5C3C430037EB13 /* QIUI-APITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0496CD1F2D5C3C430037EB13 /* Build configuration list for PBXNativeTarget "QIUI-APITests" */;
+			buildPhases = (
+				0496CD042D5C3C430037EB13 /* Sources */,
+				0496CD052D5C3C430037EB13 /* Frameworks */,
+				0496CD062D5C3C430037EB13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0496CD0A2D5C3C430037EB13 /* PBXTargetDependency */,
+			);
+			name = "QIUI-APITests";
+			productName = "QIUI-APITests";
+			productReference = 0496CD082D5C3C430037EB13 /* QIUI-APITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0496CD112D5C3C430037EB13 /* QIUI-APIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0496CD222D5C3C430037EB13 /* Build configuration list for PBXNativeTarget "QIUI-APIUITests" */;
+			buildPhases = (
+				0496CD0E2D5C3C430037EB13 /* Sources */,
+				0496CD0F2D5C3C430037EB13 /* Frameworks */,
+				0496CD102D5C3C430037EB13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0496CD142D5C3C430037EB13 /* PBXTargetDependency */,
+			);
+			name = "QIUI-APIUITests";
+			productName = "QIUI-APIUITests";
+			productReference = 0496CD122D5C3C430037EB13 /* QIUI-APIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0496CCE52D5C3C410037EB13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					0496CCEC2D5C3C410037EB13 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					0496CD072D5C3C430037EB13 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 0496CCEC2D5C3C410037EB13;
+					};
+					0496CD112D5C3C430037EB13 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 0496CCEC2D5C3C410037EB13;
+					};
+				};
+			};
+			buildConfigurationList = 0496CCE82D5C3C410037EB13 /* Build configuration list for PBXProject "QIUI-API" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0496CCE42D5C3C410037EB13;
+			productRefGroup = 0496CCEE2D5C3C410037EB13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0496CCEC2D5C3C410037EB13 /* QIUI-API */,
+				0496CD072D5C3C430037EB13 /* QIUI-APITests */,
+				0496CD112D5C3C430037EB13 /* QIUI-APIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0496CCEB2D5C3C410037EB13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D9072B2D5DD53900861ABB /* APIBuletoothListViewController.xib in Resources */,
+				0496CD302D5C498E0037EB13 /* APIHomeViewController.xib in Resources */,
+				0496CCFD2D5C3C420037EB13 /* Assets.xcassets in Resources */,
+				0496CD002D5C3C420037EB13 /* Base in Resources */,
+				04D907312D5DDC7300861ABB /* BuletoothListCell.xib in Resources */,
+				0496CCFB2D5C3C410037EB13 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0496CD062D5C3C430037EB13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0496CD102D5C3C430037EB13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EAA9780E20934E52678293DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QIUI-API-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0496CCE92D5C3C410037EB13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0496CD312D5C498E0037EB13 /* APIHomeViewController.m in Sources */,
+				04D9071D2D5D981B00861ABB /* NSDictionary+JMJson.m in Sources */,
+				04C791FC2D5EE92400C02514 /* AESCipher.m in Sources */,
+				04D907322D5DDC7300861ABB /* BuletoothListCell.m in Sources */,
+				04D9071E2D5D981B00861ABB /* NSMutableDictionary+JMJson.m in Sources */,
+				0496CCF82D5C3C410037EB13 /* ViewController.m in Sources */,
+				04D907262D5DD17500861ABB /* HKPeripheralInfo.m in Sources */,
+				04D9072C2D5DD53900861ABB /* APIBuletoothListViewController.m in Sources */,
+				04D907272D5DD17500861ABB /* HKBabyBluetoothManager.m in Sources */,
+				0496CCF22D5C3C410037EB13 /* AppDelegate.m in Sources */,
+				0496CD032D5C3C420037EB13 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0496CD042D5C3C430037EB13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0496CD0D2D5C3C430037EB13 /* QIUI_APITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0496CD0E2D5C3C430037EB13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0496CD172D5C3C430037EB13 /* QIUI_APIUITests.m in Sources */,
+				0496CD192D5C3C430037EB13 /* QIUI_APIUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0496CD0A2D5C3C430037EB13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0496CCEC2D5C3C410037EB13 /* QIUI-API */;
+			targetProxy = 0496CD092D5C3C430037EB13 /* PBXContainerItemProxy */;
+		};
+		0496CD142D5C3C430037EB13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0496CCEC2D5C3C410037EB13 /* QIUI-API */;
+			targetProxy = 0496CD132D5C3C430037EB13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0496CCF92D5C3C410037EB13 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0496CCFA2D5C3C410037EB13 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0496CCFE2D5C3C420037EB13 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0496CCFF2D5C3C420037EB13 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0496CD1A2D5C3C430037EB13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0496CD1B2D5C3C430037EB13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0496CD1D2D5C3C430037EB13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECD7E1CFAFB1E5B61CFC3B37 /* Pods-QIUI-API.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J3Y763278L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "QIUI-API/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qiui.api.QIUI-API";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0496CD1E2D5C3C430037EB13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8D2C347587FC292C34495DE /* Pods-QIUI-API.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J3Y763278L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "QIUI-API/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qiui.api.QIUI-API";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0496CD202D5C3C430037EB13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J3Y763278L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qiui.api.QIUI-APITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QIUI-API.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/QIUI-API";
+			};
+			name = Debug;
+		};
+		0496CD212D5C3C430037EB13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J3Y763278L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qiui.api.QIUI-APITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QIUI-API.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/QIUI-API";
+			};
+			name = Release;
+		};
+		0496CD232D5C3C430037EB13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J3Y763278L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qiui.api.QIUI-APIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "QIUI-API";
+			};
+			name = Debug;
+		};
+		0496CD242D5C3C430037EB13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J3Y763278L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qiui.api.QIUI-APIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "QIUI-API";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0496CCE82D5C3C410037EB13 /* Build configuration list for PBXProject "QIUI-API" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0496CD1A2D5C3C430037EB13 /* Debug */,
+				0496CD1B2D5C3C430037EB13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0496CD1C2D5C3C430037EB13 /* Build configuration list for PBXNativeTarget "QIUI-API" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0496CD1D2D5C3C430037EB13 /* Debug */,
+				0496CD1E2D5C3C430037EB13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0496CD1F2D5C3C430037EB13 /* Build configuration list for PBXNativeTarget "QIUI-APITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0496CD202D5C3C430037EB13 /* Debug */,
+				0496CD212D5C3C430037EB13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0496CD222D5C3C430037EB13 /* Build configuration list for PBXNativeTarget "QIUI-APIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0496CD232D5C3C430037EB13 /* Debug */,
+				0496CD242D5C3C430037EB13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0496CCE52D5C3C410037EB13 /* Project object */;
+}

@@ -1,0 +1,42 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - BabyBluetooth (0.7.0)
+  - MBProgressHUD (1.2.0)
+  - SBJson (5.0.3)
+
+DEPENDENCIES:
+  - AFNetworking
+  - BabyBluetooth (~> 0.7.0)
+  - MBProgressHUD
+  - SBJson
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - BabyBluetooth
+    - MBProgressHUD
+    - SBJson
+
+SPEC CHECKSUMS:
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  BabyBluetooth: d50758aecf24d4a0ab9271d69f0f116d6bee51c9
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  SBJson: 31813d1508edec904663cd59e71e0225d9dd8e07
+
+PODFILE CHECKSUM: 512b6d16fbcc90cadd5ae3cf4b2349b42dca8492
+
+COCOAPODS: 1.15.2

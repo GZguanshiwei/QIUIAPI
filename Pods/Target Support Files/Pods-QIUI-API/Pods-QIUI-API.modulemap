@@ -1,0 +1,6 @@
+framework module Pods_QIUI_API {
+  umbrella header "Pods-QIUI-API-umbrella.h"
+
+  export *
+  module * { export * }
+}
