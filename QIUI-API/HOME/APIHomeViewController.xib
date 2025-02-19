@@ -51,7 +51,7 @@
                             <color key="backgroundColor" red="0.27191840280000001" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" title="获取API TOKEN"/>
+                            <state key="normal" title="获取API TOKEN/GET API TOKEN"/>
                             <connections>
                                 <action selector="selectorBtn1:" destination="-1" eventType="touchUpInside" id="gVF-7U-LgM"/>
                             </connections>
@@ -62,7 +62,7 @@
                             <color key="backgroundColor" red="0.27191840280000001" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" title="连接设备"/>
+                            <state key="normal" title="连接设备/Connected Device"/>
                             <connections>
                                 <action selector="selectorBtn2:" destination="-1" eventType="touchUpInside" id="Ofl-bA-JSR"/>
                             </connections>
@@ -73,7 +73,7 @@
                             <color key="backgroundColor" red="0.27191840280000001" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" title="绑定设备"/>
+                            <state key="normal" title="绑定设备/Binding Device"/>
                             <connections>
                                 <action selector="selectorBtn3:" destination="-1" eventType="touchUpInside" id="eBc-IL-xrg"/>
                             </connections>
@@ -84,7 +84,7 @@
                             <color key="backgroundColor" red="0.27191840280000001" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" title="设备信息"/>
+                            <state key="normal" title="设备信息/Device Message"/>
                             <connections>
                                 <action selector="selectorBtn4:" destination="-1" eventType="touchUpInside" id="avo-dv-Zue"/>
                             </connections>
@@ -95,7 +95,7 @@
                             <color key="backgroundColor" red="0.27191840280000001" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" title="获取TOKEN"/>
+                            <state key="normal" title="获取TOKEN/GET TOKEN"/>
                             <connections>
                                 <action selector="selectorBtn5:" destination="-1" eventType="touchUpInside" id="R0C-k2-Cu0"/>
                             </connections>
@@ -106,7 +106,7 @@
                             <color key="backgroundColor" red="0.27191840280000001" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" title="开锁"/>
+                            <state key="normal" title="开锁/Unlock"/>
                             <connections>
                                 <action selector="selectorBtn6:" destination="-1" eventType="touchUpInside" id="5O0-Vd-qV3"/>
                             </connections>
@@ -117,7 +117,7 @@
                             <color key="backgroundColor" red="0.27191840280000001" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" title="关锁"/>
+                            <state key="normal" title="关锁/Lock"/>
                             <connections>
                                 <action selector="selectorBtn7:" destination="-1" eventType="touchUpInside" id="XQt-xO-8vi"/>
                             </connections>
@@ -128,7 +128,7 @@
                             <color key="backgroundColor" red="0.27191840280000001" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" title="断开连接"/>
+                            <state key="normal" title="断开连接/Disconnect"/>
                             <connections>
                                 <action selector="selectorBtn8:" destination="-1" eventType="touchUpInside" id="PFo-by-acO"/>
                             </connections>

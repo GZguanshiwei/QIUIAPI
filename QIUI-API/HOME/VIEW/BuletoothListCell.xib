@@ -25,12 +25,12 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IpC-bP-gru">
-                        <rect key="frame" x="241" y="10" width="70" height="26"/>
+                        <rect key="frame" x="196" y="10" width="115" height="26"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.27191840280000001" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                        <state key="normal" title="连接"/>
+                        <state key="normal" title="连接/Connected"/>
                         <connections>
                             <action selector="selectorConnectBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Qrd-2V-WPZ"/>
                         </connections>
