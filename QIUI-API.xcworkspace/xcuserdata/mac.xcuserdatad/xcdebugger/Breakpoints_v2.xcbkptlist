@@ -14,8 +14,8 @@
             filePath = "QIUI-API/HOME/APIHomeViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "562"
-            endingLineNumber = "562"
+            startingLineNumber = "549"
+            endingLineNumber = "549"
             landmarkName = "-functionDecryptToy:"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "QIUI-API/HOME/APIHomeViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "559"
-            endingLineNumber = "559"
+            startingLineNumber = "547"
+            endingLineNumber = "547"
             landmarkName = "-functionDecryptToy:"
             landmarkType = "7">
          </BreakpointContent>

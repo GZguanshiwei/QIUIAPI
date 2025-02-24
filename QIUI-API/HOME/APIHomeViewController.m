@@ -12,7 +12,6 @@ if (@available(iOS 11.0, *)) {\
 isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom > 0.0;\
 }\
 (isPhoneX);})
-#define AESKEY @"9CE198D1966C4FC39BF54BA122F24F35"
 
 #import "APIHomeViewController.h"
 #import <AFNetworking.h>
@@ -154,7 +153,7 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
     [params setJsonValue:@"client_credentials" key:@"grantType"];//授权方式，该参数为固定字符串'client_credentials',即客户端凭证模式
 
     //http://192.168.31.163:8115
-    NSString *getPlatformApiToken = @"https://openapi.qiuitoy.com/system/api/device/common/getPlatformApiToken";
+    NSString *getPlatformApiToken = @"http://192.168.31.163:8115/system/api/device/common/getPlatformApiToken";
     SBJson5Writer *writer = [[SBJson5Writer alloc] init];
     NSString *jsonStr = [writer stringWithObject:params];
 
@@ -225,10 +224,9 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     [params setJsonValue:_bluetoothAddress key:@"bluetoothAddress"];
 
-    NSString *addDeviceInfo = @"https://openapi.qiuitoy.com/system/api/platform/device/addDeviceInfo";
+    NSString *addDeviceInfo = @"http://192.168.31.163:8115/system/api/platform/device/addDeviceInfo";
     SBJson5Writer *writer = [[SBJson5Writer alloc] init];
-    NSString *jsonStr = [writer stringWithObject:params];
-    NSString *parametersStr = aesEncryptString(jsonStr, AESKEY);
+    NSString *parametersStr = [writer stringWithObject:params];
 
     NSURL *url = [NSURL URLWithString:addDeviceInfo];
     //创建请求request
@@ -247,8 +245,7 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
     
     [[manager dataTaskWithRequest:request uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
         
-        NSString * str  =[[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-        NSString *decryptedText = aesDecryptString(str, AESKEY);
+        NSString * decryptedText  =[[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
         NSData *data = [decryptedText dataUsingEncoding:NSUTF8StringEncoding];
         NSDictionary *tempDictQueryDiamond = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
         NSString *state = [NSString stringWithFormat:@"%@",[tempDictQueryDiamond objectForKey:@"code"]];
@@ -294,10 +291,9 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     [params setJsonValue:_bluetoothAddress key:@"bluetoothAddress"];
 
-    NSString *addDeviceInfo = @"https://openapi.qiuitoy.com/system/api/platform/device/queryDeviceInfo";
+    NSString *addDeviceInfo = @"http://192.168.31.163:8115/system/api/platform/device/queryDeviceInfo";
     SBJson5Writer *writer = [[SBJson5Writer alloc] init];
-    NSString *jsonStr = [writer stringWithObject:params];
-    NSString *parametersStr = aesEncryptString(jsonStr, AESKEY);
+    NSString *parametersStr = [writer stringWithObject:params];
 
     NSURL *url = [NSURL URLWithString:addDeviceInfo];
     //创建请求request
@@ -316,8 +312,7 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
     
     [[manager dataTaskWithRequest:request uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
         
-        NSString * str  =[[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-        NSString *decryptedText = aesDecryptString(str, AESKEY);
+        NSString * decryptedText  =[[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
         NSData *data = [decryptedText dataUsingEncoding:NSUTF8StringEncoding];
         NSDictionary *tempDictQueryDiamond = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
         NSString *state = [NSString stringWithFormat:@"%@",[tempDictQueryDiamond objectForKey:@"code"]];
@@ -357,10 +352,9 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
     [params setJsonValue:_serialNumber key:@"serialNumber"];//Device Code
     [params setJsonValue:_typeId key:@"typeId"];//设备编号
 
-    NSString *addDeviceInfo = @"https://openapi.qiuitoy.com/system/api/device/common/getDeviceToken";
+    NSString *addDeviceInfo = @"http://192.168.31.163:8115/system/api/device/common/getDeviceToken";
     SBJson5Writer *writer = [[SBJson5Writer alloc] init];
-    NSString *jsonStr = [writer stringWithObject:params];
-    NSString *parametersStr = aesEncryptString(jsonStr, AESKEY);
+    NSString *parametersStr = [writer stringWithObject:params];
 
     NSURL *url = [NSURL URLWithString:addDeviceInfo];
     //创建请求request
@@ -379,8 +373,7 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
     
     [[manager dataTaskWithRequest:request uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
         
-        NSString * str  =[[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-        NSString *decryptedText = aesDecryptString(str, AESKEY);
+        NSString * decryptedText  =[[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
         NSData *data = [decryptedText dataUsingEncoding:NSUTF8StringEncoding];
         NSDictionary *tempDictQueryDiamond = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
         NSString *state = [NSString stringWithFormat:@"%@",[tempDictQueryDiamond objectForKey:@"code"]];
@@ -420,10 +413,9 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
     [params setJsonValue:_serialNumber key:@"serialNumber"];//Device Code
     [params setJsonValue:_typeId key:@"typeId"];//设备编号
 
-    NSString *addDeviceInfo = @"https://openapi.qiuitoy.com/system/api/device/keyPod/getKeyPodUnlockCmd";
+    NSString *addDeviceInfo = @"http://192.168.31.163:8115/system/api/device/keyPod/getKeyPodUnlockCmd";
     SBJson5Writer *writer = [[SBJson5Writer alloc] init];
-    NSString *jsonStr = [writer stringWithObject:params];
-    NSString *parametersStr = aesEncryptString(jsonStr, AESKEY);
+    NSString *parametersStr = [writer stringWithObject:params];
 
     NSURL *url = [NSURL URLWithString:addDeviceInfo];
     //创建请求request
@@ -442,8 +434,7 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
     
     [[manager dataTaskWithRequest:request uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
         
-        NSString * str  =[[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-        NSString *decryptedText = aesDecryptString(str, AESKEY);
+        NSString * decryptedText  =[[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
         NSData *data = [decryptedText dataUsingEncoding:NSUTF8StringEncoding];
         NSDictionary *tempDictQueryDiamond = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
         NSString *state = [NSString stringWithFormat:@"%@",[tempDictQueryDiamond objectForKey:@"code"]];
@@ -469,10 +460,9 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
     [params setJsonValue:_serialNumber key:@"serialNumber"];//Device Code
     [params setJsonValue:_typeId key:@"typeId"];//设备编号
 
-    NSString *addDeviceInfo = @"https://openapi.qiuitoy.com/system/api/device/keyPod/getKeyPodLockCmd";
+    NSString *addDeviceInfo = @"http://192.168.31.163:8115/system/api/device/keyPod/getKeyPodLockCmd";
     SBJson5Writer *writer = [[SBJson5Writer alloc] init];
-    NSString *jsonStr = [writer stringWithObject:params];
-    NSString *parametersStr = aesEncryptString(jsonStr, AESKEY);
+    NSString *parametersStr = [writer stringWithObject:params];
 
     NSURL *url = [NSURL URLWithString:addDeviceInfo];
     //创建请求request
@@ -491,8 +481,7 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
     
     [[manager dataTaskWithRequest:request uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
         
-        NSString * str  =[[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-        NSString *decryptedText = aesDecryptString(str, AESKEY);
+        NSString * decryptedText  =[[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
         NSData *data = [decryptedText dataUsingEncoding:NSUTF8StringEncoding];
         NSDictionary *tempDictQueryDiamond = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
         NSString *state = [NSString stringWithFormat:@"%@",[tempDictQueryDiamond objectForKey:@"code"]];
@@ -533,10 +522,9 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
     [params setJsonValue:str key:@"lockCommand"];//Command Returned by Device
     [params setJsonValue:_serialNumber key:@"serialNumber"];//Device Code
 
-    NSString *addDeviceInfo = @"https://openapi.qiuitoy.com/system/api/device/keyPod/decryBluetoothCommand";
+    NSString *addDeviceInfo = @"http://192.168.31.163:8115/system/api/device/keyPod/decryBluetoothCommand";
     SBJson5Writer *writer = [[SBJson5Writer alloc] init];
-    NSString *jsonStr = [writer stringWithObject:params];
-    NSString *parametersStr = aesEncryptString(jsonStr, AESKEY);
+    NSString *parametersStr = [writer stringWithObject:params];
 
     NSURL *url = [NSURL URLWithString:addDeviceInfo];
     //创建请求request
@@ -555,8 +543,7 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
     
     [[manager dataTaskWithRequest:request uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
         
-        NSString * str  =[[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-        NSString *decryptedText = aesDecryptString(str, AESKEY);
+        NSString * decryptedText  =[[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
         NSData *data = [decryptedText dataUsingEncoding:NSUTF8StringEncoding];
         NSDictionary *tempDictQueryDiamond = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
         NSString *state = [NSString stringWithFormat:@"%@",[tempDictQueryDiamond objectForKey:@"code"]];
