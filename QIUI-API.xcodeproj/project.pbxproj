@@ -173,7 +173,31 @@
 		0496CD252D5C44E50037EB13 /* HOME */ = {
 			isa = PBXGroup;
 			children = (
+				04B737692D70537A000A03E1 /* 二代钥匙盒 */,
+				04B737682D70536C000A03E1 /* 三代锁 */,
+			);
+			path = HOME;
+			sourceTree = "<group>";
+		};
+		04B737682D70536C000A03E1 /* 三代锁 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "三代锁";
+			sourceTree = "<group>";
+		};
+		04B737692D70537A000A03E1 /* 二代钥匙盒 */ = {
+			isa = PBXGroup;
+			children = (
+				04B7376A2D705392000A03E1 /* VIEW CONTROLLER */,
 				04D9072D2D5DDC5600861ABB /* VIEW */,
+			);
+			path = "二代钥匙盒";
+			sourceTree = "<group>";
+		};
+		04B7376A2D705392000A03E1 /* VIEW CONTROLLER */ = {
+			isa = PBXGroup;
+			children = (
 				0496CD2D2D5C498E0037EB13 /* APIHomeViewController.h */,
 				0496CD2E2D5C498E0037EB13 /* APIHomeViewController.m */,
 				0496CD2F2D5C498E0037EB13 /* APIHomeViewController.xib */,
@@ -181,7 +205,7 @@
 				04D907292D5DD53900861ABB /* APIBuletoothListViewController.m */,
 				04D9072A2D5DD53900861ABB /* APIBuletoothListViewController.xib */,
 			);
-			path = HOME;
+			path = "VIEW CONTROLLER";
 			sourceTree = "<group>";
 		};
 		04C791FB2D5EE92400C02514 /* AES加密方式 */ = {
